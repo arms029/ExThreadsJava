@@ -68,33 +68,3 @@ public class ClienteTarefas {
 	}
 
 }
-
-//Usando classe an�nima
-//Thread threadEnviaComando = new Thread(new Runnable() {
-//@Override
-//public void run() {
-//	try {
-//		System.out.println("Pode enviar comandos!");
-//		PrintStream saida = new PrintStream(socket.getOutputStream());
-//		Scanner teclado = new Scanner(System.in);
-//		
-//		while (teclado.hasNextLine()) {
-//			String linha = teclado.nextLine();
-//			
-//			if (linha.trim().equals("/sair")) {
-//				System.out.println("deseja realmente terminar a conex�o com o servidor?\ndigite 's' para sair ou qualquer outra tecla para continuar");
-//				String confirmacao = teclado.nextLine();
-//				if (confirmacao.trim().equals("s"))
-//					break;
-//				else
-//					continue;
-//			}
-//			saida.println(linha);
-//		}
-//		saida.close();
-//		teclado.close();
-//	} catch (IOException e) {
-//		throw new RuntimeException(e);
-//	}
-//}
-//});
