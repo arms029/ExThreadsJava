@@ -99,7 +99,7 @@ public class InterfaceGrafica {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				saida.println("fim");
+				saida.println("/fim");
 			}
 		});
 		botoes.add(botao);
